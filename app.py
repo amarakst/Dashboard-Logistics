@@ -341,8 +341,7 @@ def main():
             st.write(f"Role: **{st.session_state['role']}**")
             st.divider()
             
-          menu = st.radio("Menu Navigasi", 
-                             ["Dashboard Utama", "Order Status (E2E)", "Warehouse", "Tracking Pengiriman", "Laporan Kerja", "Mitra & Supplier", "Manajemen Insiden"])
+            menu = st.radio("Menu Navigasi", ["Dashboard Utama", "Order Status (E2E)", "Warehouse", "Tracking Pengiriman", "Laporan Kerja", "Mitra & Supplier", "Manajemen Insiden"])
         
             st.divider()
             if st.button("Logout"):
@@ -368,4 +367,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
