@@ -39,7 +39,6 @@ def get_data():
         'Status': ['In Transit', 'Delayed', 'Delivered', 'In Transit'],
         'Ekspedisi_3PL': ['Logistik Cepat', 'Truk Nusantara', 'Cargo Kilat', 'Logistik Cepat'],
         'Sopir': ['Budi', 'Asep', 'Joko', 'Rian'],
-        'Kontak_3PL': ['0811-2233-4455', '0812-3456-7890', '0813-9876-5432', '0811-2233-4455'],
         'Kontak_Sopir': ['0856-7788-9900', '0857-1122-3344', '0858-5566-7788', '0856-7788-9900'],
         'ETA': [datetime.date.today(), datetime.date.today(), datetime.date.today() - datetime.timedelta(days=1), datetime.date.today() + datetime.timedelta(days=2)],
         'Lat': [-7.2575, -6.9175, -6.9667, 3.5952], # Koordinat dummy
@@ -252,6 +251,7 @@ def show_partners():
         'Total Pengiriman': [150, 120, 200],
         'Tepat Waktu (%)': [95, 80, 88],
         'Rating': ['⭐⭐⭐⭐⭐', '⭐⭐⭐', '⭐⭐⭐⭐']
+        'Kontak_3PL': ['0811-2233-4455', '0812-3456-7890', '0813-9876-5432', '0811-2233-4455'],
     })
     
     st.table(partners)
@@ -369,6 +369,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
