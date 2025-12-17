@@ -5,7 +5,7 @@ import datetime
 import time
 
 # --- KONFIGURASI HALAMAN ---
-st.set_page_config(page_title="Sinar Pangan Control Tower", layout="wide", page_icon="🚚")
+st.set_page_config(page_title="LogiSphere Control Tower", layout="wide", page_icon="🚚")
 
 # --- DATA DUMMY (MENSIMULASIKAN DATABASE TERINTEGRASI) ---
 
@@ -64,7 +64,7 @@ inventory_df, shipment_df, order_df, incident_df = get_data()
 
 # --- FUNGSI LOGIN ---
 def login_page():
-    st.markdown("<h1 style='text-align: center;'>Sinar Pangan Abadi - SCM Login</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>LogiSphere - SCM Login</h1>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
@@ -135,7 +135,7 @@ def show_dashboard():
 # --- TRACKING PUBLIK UNTUK PELANGGAN ---
 def show_public_tracking():
     st.title("📦 Pelacakan Pesanan Anda")
-    st.subheader("PT. Sinar Pangan Abadi - Customer Tracking")
+    st.subheader("LogiSpehere - Customer Tracking")
     
     # Form input untuk Kode Pelacakan
     tracking_code = st.text_input("Masukkan Kode Pelacakan (Contoh: SPAB-001X)", "")
@@ -389,7 +389,7 @@ def main():
         # Sidebar Menu
         with st.sidebar:
             st.image("https://cdn-icons-png.flaticon.com/512/4129/4129437.png", width=100)
-            st.title("Sinar Pangan Abadi")
+            st.title("LogiSphere")
             st.write(f"Role: **{st.session_state['role']}**")
             st.divider()
             
@@ -419,6 +419,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
