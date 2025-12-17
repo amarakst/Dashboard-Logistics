@@ -47,7 +47,7 @@ def get_data():
     })
     
     # Data Pengiriman (Tracking) - Menjawab "Lubang Hitam" Logistik 
-    shipment_data = pd.DataFrame({
+    shipment_df = pd.DataFrame({
         'ID_Pengiriman': ['SHP-001', 'SHP-002', 'SHP-003', 'SHP-004'],
         'Tujuan': ['Distributor Surabaya', 'Distributor Bandung', 'Distributor Semarang', 'Distributor Medan'],
         'Status': ['In Transit', 'Delayed', 'Delivered', 'In Transit'],
@@ -444,6 +444,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
